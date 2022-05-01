@@ -8,6 +8,12 @@
 @font-face {
     font-family: whyte;
     src: url("../public/ABCWhyteInktrap-Bold-Trial.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: whyte;
+    src: url("../public/ABCWhyteInktrap-Book-Trial.otf");
+    font-weight: normal;
 }
 @layer utilities {
     .navbg {
@@ -17,13 +23,25 @@
     }
     .bgGradient {
         background-image: linear-gradient(90.71deg, #73e0a9, #5b68df);
+        transition: transform 0.3s ease;
+        overflow: hidden;
+        color: white;
     }
     .gradTxt {
-        font-size: 16px;
         background: linear-gradient(90.71deg, #73e0a9, #5b68df);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    /* .bgGradient::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        background-color: black;
+        background-image: linear-gradient(90.71deg, #73e0a9, #5b68df);
+        z-index: -1;
+        transition: transform 0.5s ease;
+    } */
 }
 
 html,
@@ -36,6 +54,25 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.MuiTabs-textColorPrimary,
+.MuiTab-textColorPrimary {
+    color: #b8b7cf;
+    font-family: whyte;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Mui-selected {
+    background: linear-gradient(90.71deg, #73e0a9, #5b68df);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.MuiTabs-indicator {
+    background-image: linear-gradient(90.71deg, #73e0a9, #5b68df);
+    transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 * {

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import globe from "../public/globe.png";
 import { MdInfo } from "react-icons/md";
+import Link from "next/link";
 
 export default function Hero() {
     return (
         <div className=" relative w-full h-screen">
-            <div className="top-[-10%] right-0 absolute z-[0]">
+            <div className="2xl:top-[-20%] 3xl:top-[-10%] right-0 absolute z-[0]">
                 <Image src={globe} height={880} width={880} />
             </div>
             <div className="absolute items-center  h-auto justify-center space-y-20 px-[10%] py-[12%] z-[100]">
@@ -19,13 +20,17 @@ export default function Hero() {
                     </h1>
                 </div>
 
-                <div className="flex space-x-14 text-white text-xl ">
-                    <button className="border border-white rounded-full py-3 px-14 font-bold">
-                        Explore
-                    </button>
-                    <button className="bgGradient rounded-full py-3 px-14 font-bold ">
-                        Create
-                    </button>
+                <div className="flex space-x-14 text-white text-xl relative ">
+                    <Link href="/explore" passHref>
+                        <button className="border-2 border-white rounded-full py-3 px-14 font-bold hover:gradTxt hover:border-[#539e79]">
+                            Explore
+                        </button>
+                    </Link>
+                    <Link href="/" passHref>
+                        <button className="rounded-full py-3 px-14 font-bold bgGradient">
+                            Create
+                        </button>
+                    </Link>
                 </div>
 
                 <svg width="0" height="0" className="For Icon Gradient">

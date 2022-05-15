@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/sdk": "^1.42.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.6.2",
@@ -17,6 +18,7 @@
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },

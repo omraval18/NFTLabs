@@ -64,6 +64,14 @@ a {
     font-size: 16px;
     font-weight: bold;
 }
+.MuiTabs-textColorSecondary,
+.MuiTab-textColorSecondary {
+    color: white;
+    font-family: whyte;
+    text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+}
 .Mui-selected {
     background: linear-gradient(90.71deg, #73e0a9, #5b68df);
     -webkit-background-clip: text;

@@ -9,7 +9,9 @@ const connectors = {
 function MyApp({ Component, pageProps }) {
     return (
         <ThirdwebWeb3Provider supportedChainIds={supportedChainIds} connectors={connectors}>
-            <Component {...pageProps} />
+            <div className="object-cover bg-cover bg-no-repeat bg-[url('../public/bg2.png')]">
+                <Component {...pageProps} />
+            </div>
         </ThirdwebWeb3Provider>
     );
 }

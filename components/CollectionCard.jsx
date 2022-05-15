@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function CollectionCard({ number }) {
     return (
         <div
-            className="relative w-[300px] pb-4 pt-2  m-[10px] bg-transparent rounded-3xl border border-[#86868691] flex flex-col justify-center items-center hover:-translate-y-5 hover:ease duration-300"
+            className="relative w-[300px] pb-4 pt-2  m-[10px] bg-transparent rounded-3xl border border-[#86868691] flex flex-col justify-center items-center hover:border-[#cacaca91]"
             id={number}
         >
             <div>

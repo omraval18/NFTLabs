@@ -22,12 +22,12 @@ export default function Hero() {
 
                 <div className="flex space-x-14 text-white text-xl relative ">
                     <Link href="/explore" passHref>
-                        <button className="border-2 border-white rounded-full py-3 px-14 font-bold hover:gradTxt hover:border-[#539e79]">
+                        <button className="border border-[#86868691] rounded-xl py-3 px-14 font-bold  hover:border-[#cacaca91] ease-in-out duration-75">
                             Explore
                         </button>
                     </Link>
                     <Link href="/" passHref>
-                        <button className="rounded-full py-3 px-14 font-bold bgGradient">
+                        <button className="rounded-xl py-3 px-14 font-bold bgGradient">
                             Create
                         </button>
                     </Link>

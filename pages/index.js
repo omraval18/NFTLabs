@@ -7,6 +7,7 @@ import { useWeb3 } from "@3rdweb/hooks";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { useEffect } from "react";
 import { client } from "../lib/sanityClient";
+import toast, { Toaster } from "react-hot-toast";
 
 const HiddenGem = () => {
     return (
@@ -46,6 +47,14 @@ const TopCollection = () => {
 };
 export default function Home() {
     const { address, connectWallet } = useWeb3();
+    const welcomeUser = (userName, toastHandler = toast) => {
+        toastHandler.success(`Welcome back ${userName !== "Unnamed" ? ` ${userName}` : ""}!`, {
+            style: {
+                background: "#04111d",
+                color: "#fff",
+            },
+        });
+    };
 
     useEffect(() => {
         if (!address) return;
@@ -58,10 +67,13 @@ export default function Home() {
             };
 
             const result = await client.createIfNotExists(userDoc);
+            console.log(result);
+            welcomeUser(result.userName);
         })();
     }, [address]);
     return (
-        <div className="w-full h-auto object-cover bg-cover bg-no-repeat bg-[url('../public/bg2.png')] ">
+        <div className="w-full h-auto ">
+            <Toaster position="top-center" reverseOrder={false} />
             {address ? (
                 <>
                     <Navbar />

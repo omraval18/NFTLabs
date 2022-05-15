@@ -41,9 +41,9 @@ const PageContent = () => {
             </h1>
             <Box sx={{ width: "100%" }} className=" mt-28">
                 <Box>
-                    <Tabs value={value} onChange={handleChange} textColor="Primary" centered>
-                        {tabData.map((data) => (
-                            <Tab label={data.category} />
+                    <Tabs value={value} onChange={handleChange} textColor="Secondary" centered>
+                        {tabData.map((index, data) => (
+                            <Tab label={data.category} textColor="Secondary" key={index} />
                         ))}
                     </Tabs>
                     <div>

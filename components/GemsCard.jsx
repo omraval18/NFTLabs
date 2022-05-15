@@ -4,11 +4,15 @@ import collImg from "../public/collectionImg.png";
 
 export default function GemsCard({ source, collectionname, username, collsummary, number }) {
     return (
-        <div className="w-[25%] 3xl:h-[35rem] 2xl:h-[32rem] p-3 mx-6 mt-2 mb-8 bg-transparent border border-[#73E0A9] rounded-[35px] hover:-translate-y-5 hover:ease duration-300">
+        <div className="w-[25%] 3xl:h-[35rem] 2xl:h-[32rem] p-3 mx-6 mt-2 mb-8 bg-transparent border border-[#b9b8b891] rounded-[35px] hover:-translate-y-5 hover:ease duration-300">
             <div className="relative w-full flex flex-col justify-center items-center">
-                <div className="justify-center flex  border-[0.88px] border-[#73E0A9] rounded-[35px] mt-1">
-                    <Image src={collImg} height={287} width={287} className="rounded-[35px] " />
-                </div>
+                <Image
+                    src={collImg}
+                    height={287}
+                    width={287}
+                    className="rounded-[15%] mt-1 border border-[white] "
+                />
+
                 <div className="absolute mx-auto -bottom-[25px] z-50 w-[55px] h-[55px] pb-12 border-2 rounded-full border-[#77CBA1]">
                     <Image
                         src={collImg}

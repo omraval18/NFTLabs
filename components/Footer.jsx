@@ -18,7 +18,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className="bottom-0 w-full flex  py-20 px-28 mt-16 bg-[#1F1D2B]/10 backdrop-blur-[4px] items-center ">
+        <div className=" bottom-0 w-full flex  py-20 px-28 mt-16 bg-[#1F1D2B]/10 backdrop-blur-[4px] items-center ">
             <div className="space-y-5 w-1/2">
                 <h1 className="text-white text-sm font-bold">NFTLABS</h1>
                 <p className="text-white text-sm font-normal">

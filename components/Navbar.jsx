@@ -13,7 +13,7 @@ export default function Navbar() {
                 <Image src={logo} height={100} width={100} />
             </div>
             <div>
-                <div className=" bg-transparent py-3 px-4 flex border-[#73E0A9] border rounded-full items-center justify-between">
+                <div className=" bg-transparent py-3 px-4 flex border-[#86868691] border rounded-xl hover:border-[#cacaca91] ease-in-out duration-75 items-center justify-between ">
                     <BiSearchAlt className="text-xl text-white" />
                     <input
                         type="text"
@@ -48,10 +48,10 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className="flex items-center space-x-6">
-                <button className=" font-bold bg-transparent 3xl:py-2 3xl:px-8 2xl:py-2 2xl:px-8 rounded-full border text-base text-white border-[#5B68DF]">
+                <button className=" font-bold bg-transparent 3xl:py-2 3xl:px-8 2xl:py-2 2xl:px-8 rounded-xl border text-base text-white border-[#86868691] hover:border-[#cacaca91] ease-in-out duration-75">
                     Account
                 </button>
-                <button className="font-bold  py-2 px-2 3xl:py-2 3xl:px-6 2xl:py-2 2xl:px-6  rounded-full border 3xl:text-base  2xl:text-sm text-white border-[#5B68DF] flex justify-center bgGradient items-center">
+                <button className="font-bold  py-2 px-2 3xl:py-2 3xl:px-6 2xl:py-2 2xl:px-6  rounded-xl 3xl:text-base  2xl:text-sm text-white flex justify-center bgGradient items-center">
                     <MdOutlineAccountBalanceWallet className="2xl:text-lg mr-2" />
                     Connect Wallet
                 </button>
